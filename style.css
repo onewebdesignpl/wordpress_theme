@@ -1,0 +1,203 @@
+/*
+Theme Name: Slawomir Theme
+Theme URI: https://slawomirandrzejewski.pl
+Author: Slawomir Andrzejewski
+Author URI: https://slawomirandrzejewski.pl
+Description: Slawomir Theme ver 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: slawomirandrzejewski
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,900&display=swap&subset=latin-ext');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+
+.purple {
+    color: #743CEA;
+}
+
+.dark-grey {
+    color: #1b1b1b;
+}
+
+/* HEADER SECTION  */
+.header-image {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: right;
+    height: 60vh;
+    background: url(img/bass-guitar-1841186_1920\ 1.png) no-repeat center 10%;
+    background-size: cover;
+}
+.main-title-wrap {
+    margin-right: 2rem;
+    max-width: 580px;
+}
+.main-title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.btn {
+    width: 180px;
+    line-height: 40px;
+    background: #E8CA2F;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+/* CARDS SECTION  */
+.rounded-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #F4F4F4;
+    height: 130px;
+    width: 130px;
+}
+.rounded-circle i {
+    font-size: 64px;
+    color: #373737
+}
+.btn-secondary {
+    display: block;
+    text-align: center;
+    width: 130px;
+    background: #743CEA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 0;
+    line-height: 40px;
+}
+.btn-secondary:hover {
+    background: #611CF1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+.info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+/* BOXES SECTION */
+.image-wrapper {
+    width: 90%;
+    min-height: 300px;
+}
+.first-image {
+    background: url(img/image01.png) no-repeat;
+}
+.second-image {
+    background: url(img/image02.png) no-repeat;
+}
+.heading {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 28px;
+    color: #777777;
+}
+.heading > span {
+    font-weight: 900;
+    font-size: 16px;
+    color: #E8CA2F;
+}
+.lead {
+    font-weight: 300;
+font-size: 16px;
+line-height: 27px;
+color: #484848;
+}
+
+/* BLOG PAGE */
+.blog-post {
+    padding: 1rem 0;
+}
+.blog-post > p {
+    max-width: 800px;
+}
+.blog-title {
+    margin-top: 4rem;
+    font-weight: 900;
+    color: #1f1f1f;
+}
+.post-thumbnail img {
+    margin-bottom: 10px;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+.navbar {
+    background-color: #E8CA2F;
+}
+
+a.navbar-brand {
+    font-weight: 800;
+    font-size: 18px;
+    color: #1B1B1B;
+}
+
+.featurette-divider {
+    margin: 2rem;
+}
+
+
+
+
+
+  /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    overflow-x: hidden;
+  }
+  
+  
+/* MEDIA QUERIES */
+@media (min-width: 460px) {
+    .heading {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .heading > span {
+        font-size: 28px;
+    }
+    .lead {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        color: #484848;
+    }
+}
